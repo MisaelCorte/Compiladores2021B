@@ -1,0 +1,46 @@
++++++++++++++++++++++++++
++++Corte Aguire Isaí Misael+++
++++++++Compiladores+++++++
+++++++++++3CV16++++++++++
++++++++++++++++++++++++++
+6. Calcula la tabla LL(1) de la gramática:  
+S->CabS    
+S->Bc     
+B->Sab    
+C->b    
+B->C
+
+7.Calcula la tabla LR(0) de la gramática de la pregunta 6.
+1) Extender la grámática:
+	S'->S		<<Produccion Extendida
+	S->CabS    	(1)
+	S->Bc     		(2)
+	B->Sab    		(3)
+	C->b    		(4)
+	B->C		(5)
+
+8. Calcula la tabla LR(1) de la gramática de la pregunta 6.
+Paso 1. Extender la grámática:
+	S'->S		<<Produccion Extendida
+	S->CabS    	(1)
+	S->Bc     		(2)
+	B->Sab    		(3)
+	C->b    		(4)
+	B->C		(5)
+
+Paso 2.  Calcular cerradura ( {[S'->.S,$]} ) 	<< Estado/subconjunto inicial
+	C({[S'->.S, $]}) = {|[S'->.S, $]|, [S->.CabS, $], [S->.Bc, $]}	(1)
+		Primero($) = {$}
+
+Paso 3. Mover/Cerradura para calcular los demás subconjuntos LR(1).
+(1) S = {|[S'->S., $]|}						(2)
+(1) C = {|[S->C.abS, $]|, []}
+
+9. Calcula la tabla LALR de la gramática de la pregunta 6.
+Paso 1.
+Paso 2.
+Paso 3.
+Paso 4. Identificar los subconjuntos "fusionables".
+Kernels de los subconjuntos LR(1)
+
+
